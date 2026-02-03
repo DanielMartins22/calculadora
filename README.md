@@ -42,7 +42,7 @@ git clone https://github.com/DanielMartins22/calculadora.git
 
 2. Abra o arquivo `index.html` no navegador
 
-Ou acesse a versão online: [GitHub Pages](https://DanielMartins22.github.io/calculadora)
+Ou acesse a versão online: [GitHub Pages](https://danielmartins22.github.io/calculadora/)
 
 ## 📱 Design
 
