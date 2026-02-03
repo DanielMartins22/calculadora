@@ -56,6 +56,8 @@ Inspirado na calculadora nativa do iOS, com:
 
 Desenvolvido por **Daniel Martins**
 
-## 📄 Licença
+## 📄 License / Licença
 
-Este projeto está sob a licença MIT.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
