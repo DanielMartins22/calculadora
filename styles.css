@@ -1,0 +1,106 @@
+/* Reset básico */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  background: #000;
+  border-radius: 40px;
+  padding: 20px 15px 30px;
+  width: 340px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  /* sombra sutil escura */
+}
+
+.display {
+  background: #000;
+  color: #fff;
+  font-size: 74px;          /* Tamanho inicial grande */
+  text-align: right;
+  padding: 20px 15px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  white-space: nowrap;      /* Evita quebra de linha */
+  overflow: hidden;         /* Esconde texto que ultrapassa */
+  text-overflow: ellipsis;  /* Mostra "..." se precisar */
+  min-height: 80px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  user-select: none;
+  transition: font-size 0.2s ease; /* Transição suave no tamanho da fonte */
+}
+
+/* Container dos botões */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+/* Botões comuns */
+button {
+  border: none;
+  border-radius: 50%;
+  font-size: 28px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease;
+  user-select: none;
+  color: #fff;
+  background-color: #333;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  /* sombra leve */
+}
+
+/* Botão zero - largura dupla e borda arredondada estilo iPhone */
+button.zero {
+  grid-column: span 2;
+  border-radius: 35px;
+  width: auto;
+  padding-left: 30px;
+  justify-content: flex-start;
+}
+
+/* Cores específicas para funções */
+button.function {
+  background-color: #a5a5a5;
+  color: #000;
+}
+
+button.function:active {
+  background-color: #8e8e8e;
+}
+
+/* Cores operadores */
+button.operator {
+  background-color: #ff9500;
+}
+
+button.operator:active {
+  background-color: #e08900;
+}
+
+/* Efeito ao clicar */
+button:active {
+  transform: translateY(2px);
+  box-shadow: none;
+  /* sombra desaparece ao clicar para dar sensação de pressão */
+}
